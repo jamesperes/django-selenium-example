@@ -11,7 +11,10 @@ An example Django project for selenium test implementation.
 
 Takes screenshots if any test case fail.
 
-###Demo
+###Demo in firefox 
+![selenium-demo](https://github.com/erdem/django-selenium-example/blob/master/demo.gif?raw=true)
+
+###Demo in PhatomJS
 ![selenium-demo](https://github.com/erdem/django-selenium-example/blob/master/demo.gif?raw=true)
 
 ###Install 
