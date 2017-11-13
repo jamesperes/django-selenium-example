@@ -27,7 +27,7 @@ class TodoActionSeleniumTestCase(UserBaseSeleniumTestCase):
         self.assertEqual(int(active_todo_count), 2)
 
         self.browser.find_element_by_id("todo-complete-action-%s" % self.active_todo_1.id).click()
-
+        self.browser.save_screenshot('sc004.jpg')
         self.browser.get('%s%s' % (self.live_server_url, reverse_lazy("todos:completed_list")))
         user_completed_todo_count = Todo.objects.filter(user=self.user, done=True).count()
         todo_count_in_html_elem = self.browser.find_element_by_id("id_todos_count").text

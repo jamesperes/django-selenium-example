@@ -21,6 +21,7 @@ class UserRegistrationSeleniumTestCase(SeleniumScreenShotMixin, StaticLiveServer
         self.browser.find_element_by_id("id_password2").send_keys("Psiph5sK")
 
         self.browser.find_element_by_id("user-registration-submit").click()
+        self.browser.save_screenshot('sc001.jpg')
         self.assertEqual(username, self.browser.find_element_by_id("username-text").text)
 
 
@@ -39,4 +40,5 @@ class UserLoginSeleniumTestCase(SeleniumScreenShotMixin, StaticLiveServerTestCas
         self.browser.find_element_by_id("id_username").send_keys("newuser")
         self.browser.find_element_by_id("id_password").send_keys("NiGiw3Ch")
         self.browser.find_element_by_id("user-login-submit").click()
+        self.browser.save_screenshot('sc002.jpg')
         self.assertEqual(self.user.username, self.browser.find_element_by_id("username-text").text)

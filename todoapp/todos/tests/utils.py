@@ -19,4 +19,5 @@ class UserBaseSeleniumTestCase(SeleniumScreenShotMixin, StaticLiveServerTestCase
         self.browser.get('%s%s' % (self.live_server_url, reverse_lazy("accounts:login")))
         self.browser.find_element_by_id("id_username").send_keys("todo_man")
         self.browser.find_element_by_id("id_password").send_keys("ThiSk4Zu")
+        self.browser.save_screenshot('sc003.jpg')
         self.browser.find_element_by_id("user-login-submit").click()
