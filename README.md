@@ -14,8 +14,8 @@ Takes screenshots if any test case fail.
 ###Demo in firefox 
 ![selenium-demo](https://github.com/erdem/django-selenium-example/blob/master/demo.gif?raw=true)
 
-###Demo in PhatomJS
-![selenium-demo](https://github.com/erdem/django-selenium-example/blob/master/demo.gif?raw=true)
+###Demo in PhantomJS
+![selenium-demo-phantom](https://github.com/jamesperes/django-selenium-example/blob/master/phantomjs.jpg)
 
 ###Install 
 
